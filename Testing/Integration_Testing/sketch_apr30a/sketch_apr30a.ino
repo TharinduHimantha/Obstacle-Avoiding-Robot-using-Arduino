@@ -1,3 +1,10 @@
+/*
+  Integration testing for actuators
+    - Tested for possible power disruptions, interuptions and insufficient current isuues
+
+*/
+
+
 #include <Servo.h>
 #include <stdlib.h>
 #include <SoftwareSerial.h>

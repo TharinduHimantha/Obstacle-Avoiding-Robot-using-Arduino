@@ -1,3 +1,9 @@
+/*
+  Integration of Bluetooth module and Ultrasound sensors
+    -Takes inputs from the sensors and send them via bluetooth
+
+*/
+
 #include <SoftwareSerial.h>
 
 // Define Bluetooth serial pins
@@ -22,11 +28,11 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  int a =  Measure(trigPin1, echoPin1); 
+  int a =  Measure(trigPin1, echoPin1);   //Taking inputs from sensor 1
   Serial.println(a);
   BTSerial.println(a);
   delay(50);
-  int b = Measure(trigPin2, echoPin2);
+  int b = Measure(trigPin2, echoPin2);    //Taking inputs from sensor2
   Serial.println(b);
   BTSerial.println(b);
   BTSerial.println("");

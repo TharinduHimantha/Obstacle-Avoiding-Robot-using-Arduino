@@ -1,3 +1,10 @@
+/*
+  Integration of Ultrasound sensors and Servo motors
+    - Tested what issues do occur when sensors rotated by the servos
+
+*/
+
+
 #include <Servo.h>
 #include <stdlib.h>
 
